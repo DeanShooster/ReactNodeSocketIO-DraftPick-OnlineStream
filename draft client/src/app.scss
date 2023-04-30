@@ -1,0 +1,19 @@
+@import './styles/global.scss';
+
+html,body{ margin: 0;}
+
+.App{
+    position: relative;
+    width: 100%; min-height: 100vh;
+    background-image: url('./Images/Background.webp'); background-repeat: no-repeat; background-size: cover;
+    filter: brightness(65%);
+    display: flex; flex-flow: column;
+    font-family: $main-font; color: $main-font-color;
+    overflow-x: hidden;
+}
+
+// Scrollbar
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #dadada; }
+::-webkit-scrollbar-thumb { background: #3b3b3b; border-radius: 25px; }
+::-webkit-scrollbar-thumb:hover {background: #353535; }

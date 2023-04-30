@@ -1,0 +1,19 @@
+
+
+.chosen-spec-wrapper{
+    position: relative;
+    border: 1px solid black;
+
+    .chosen-spec-image{
+        width: 100px;
+    }
+
+    .remove-spec-icon{
+        position: absolute; top: 0; right: 0;
+        width: 30px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

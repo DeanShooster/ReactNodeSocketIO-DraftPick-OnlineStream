@@ -1,0 +1,28 @@
+@import '../../../../styles/global.scss';
+
+.setSquadButton{
+    @include button;
+    width: fit-content;
+    position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%);
+    animation: side-popup .5s linear;
+}
+
+.pick-error-msg{
+    margin: 2rem 0 0 0;
+    font-size: 2rem; font-weight: 600; letter-spacing: 2px; text-shadow: 0 1px 3px black; white-space: nowrap; text-align: center;
+    color: rgb(253, 28, 28);
+    animation: pump 2.5s linear infinite;
+}
+
+@keyframes side-popup{
+    0%{transform: translate(-50%,100%); }
+    80%{transform: translate(-50%,-20%);}
+    100%{transform: translate(-50%,0);}
+}
+
+@keyframes pump{
+    0%{transform: scale(1);}
+    25%{transform: scale(1.1);}
+    75%{transform: scale(0.9);}
+    100%{transform: scale(1);}
+}

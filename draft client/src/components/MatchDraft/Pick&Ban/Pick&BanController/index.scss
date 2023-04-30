@@ -1,0 +1,27 @@
+@import '../../../../styles/global.scss';
+
+footer{
+    width: 100%; height: fit-content;
+    margin: auto 0 1rem 0; padding-top: 1rem;
+    display: flex; justify-content: center;
+    animation: popup .4s linear;
+
+    .button-container{
+        display: flex; align-items: center;  justify-content: center; gap: 1rem; 
+        @include button;
+        padding: 1rem 2rem;
+
+        @media(max-width: $mobile){ padding: .75rem 1.5rem;}
+
+        img{
+            width: 50px;
+            @media(max-width: $mobile) {width: 30px;}
+        }
+    }
+}
+
+@keyframes popup{
+    0%{ transform: translateY(100%);}
+    70%{transform: translateY(-10%);}
+    100%{ transform: translateY(0);}
+}

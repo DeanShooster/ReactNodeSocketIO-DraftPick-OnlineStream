@@ -1,0 +1,36 @@
+@import '../../../../styles/global.scss';
+
+
+.team-pick-panel{
+    display: flex; flex-flow: column; gap: 2rem;
+
+    @media(max-width: $ipad) {
+        position: relative; margin: 15px 0;
+        flex-flow: row; flex-wrap: wrap; justify-content: center;
+    }
+}
+
+.left-pick{ 
+    position: absolute; left: 0; top: 50%; transform: translate(-110%,-50%);
+    @media(max-width: $ipad){position:relative; transform: translate(0,0);}
+}
+.right-pick{ 
+    position: absolute; right: 0; top: 50%; transform: translate(110%,-50%); 
+    @media(max-width: $ipad){position:relative; transform: translate(0,0);}
+}
+
+
+.team-ban-panel{
+    display: flex; flex-flow: row; gap: 2rem;
+
+}
+
+.left-ban{
+    position: absolute; bottom: 0; left: 0; transform: translate(25px,150%);
+    @media(max-width: $ipad){position:relative; transform: translate(0,0);}
+}
+
+.right-ban{
+    position: absolute; bottom: 0; right: 0; transform: translate(-25px,150%);
+    @media(max-width: $ipad){position:relative; transform: translate(0,0);}
+}

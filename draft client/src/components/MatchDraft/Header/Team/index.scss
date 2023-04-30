@@ -1,0 +1,17 @@
+@import '../../../../styles/global.scss';
+
+.team-container{
+    min-width: 150px;
+    padding: .75rem 1.5rem;
+    font-size: 1.5rem; font-weight: 700; letter-spacing: 1px; text-align: center;
+
+    @media(max-width: $ipad) { padding: .75rem 1.15rem;  font-size: 1.25rem;  }
+    @media(max-width: $mobile) {padding: .75rem 0; letter-spacing: 0; min-width: 140px;}
+}
+
+.updated-team{ animation: rotation linear 1.25s; }
+
+@keyframes rotation{
+    0%{ transform: rotateY(360deg); }
+    100%{ transform: rotate(0); }
+}

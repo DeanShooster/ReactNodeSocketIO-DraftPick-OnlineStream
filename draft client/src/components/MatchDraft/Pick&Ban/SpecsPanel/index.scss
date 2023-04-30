@@ -1,0 +1,23 @@
+@import '../../../../styles/global.scss';
+
+.specs-panel{
+    width: 100%; max-height: 600px;
+    margin: 0 15px;
+    display: flex; flex-flow: column; align-items: center; gap: 1rem;
+    display: grid;
+
+    @media(max-width: $ipad) {width: 100%; margin: 20px 0; }
+
+    .specs-container{
+        max-height: 600px;
+        padding: 1rem;
+        position: relative;
+        display: grid; grid-template-columns: repeat(9,1fr); grid-template-rows: repeat(4,1fr); justify-content: center; align-items: center; gap: 10px;
+        overflow-y: auto;
+
+        @media(max-width: $ipad) { 
+            overflow-y: none;
+            display: flex; flex-wrap: wrap;
+        }
+    }
+}

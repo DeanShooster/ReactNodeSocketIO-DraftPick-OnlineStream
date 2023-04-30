@@ -1,0 +1,35 @@
+@import '../../../../styles/global.scss';
+
+.countdown{
+    @include center;
+    display: flex; flex-flow: column; align-items: center;
+    
+    span{
+        font-size: 9rem; font-weight: 600; letter-spacing: 5px;
+    }
+    img{
+        width: 6rem;
+        animation-delay: 5s;
+        animation: rotating-clock 4s linear infinite;
+    }
+}
+
+@keyframes rotating-clock{
+    0%{ transform: rotateX(360deg); }
+    100%{ transform: rotateX(0); }
+}
+
+
+.fight{
+    @include center;
+    font-size: 10rem; font-weight: 600; letter-spacing: 5px; text-shadow: 0 10px 21px black;
+    animation: drop-from-above 1s forwards;
+} 
+
+@keyframes drop-from-above{
+    from{
+        transform: translate(-50%, -200%);
+        opacity: 0;
+    }
+    to { opacity: 1; }
+}

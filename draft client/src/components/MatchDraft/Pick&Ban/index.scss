@@ -1,0 +1,11 @@
+@import '../../../styles/global.scss';
+
+.pick-and-ban-container{
+    position: relative;
+    max-width: $max-width; width: 75%; 
+    margin: 0 auto 25px auto;
+    display: flex; align-items: center;
+
+    @media(max-width: $ipad){ flex-flow: column; gap: 1rem; width: 95%; }
+    @media(max-width: $mobile) {margin: 0 auto; }
+}

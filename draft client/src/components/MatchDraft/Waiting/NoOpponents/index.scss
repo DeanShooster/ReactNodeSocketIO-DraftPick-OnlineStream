@@ -1,0 +1,23 @@
+@import '../../../../styles/global.scss';
+
+
+.waiting-for-opponents{
+    @include center;
+    display: flex; align-items: center; gap: 1rem;
+    font-size: 3rem; font-weight: 600; letter-spacing: 2px; text-shadow: 0 1px 2px black; white-space: nowrap;
+
+    @media(max-width: $mobile) { flex-flow: column; font-size: 2rem; gap: .5rem;}
+
+    img{
+        width: 4rem;
+        animation-delay: 5s;
+        animation: rotating-clock 4s linear infinite;
+
+        @media(max-width: $mobile) {width: 6rem;}
+    }
+}
+
+@keyframes rotating-clock{
+    0%{ transform: rotateX(360deg); }
+    100%{ transform: rotateX(0); }
+}

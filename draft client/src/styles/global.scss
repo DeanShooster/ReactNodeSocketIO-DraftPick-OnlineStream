@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;600;700&display=swap');
+
+// Main Themes
+$main-font: 'Signika Negative', sans-serif;
+$main-font-color: white;
+
+// Sub Themes
+$orange-theme: #ce7918;
+
+
+// Responsive Media
+$max-width: 2000px;
+$ipad: 1000px;
+$mobile: 600px;
+
+
+// Mixins
+@mixin center{ position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+@mixin button{
+    background-color: $orange-theme; color: $main-font-color;
+    padding: 1rem 4rem;
+    font-size: 1.5rem; letter-spacing: 2px; white-space: nowrap;
+    text-shadow: 0 0 3px black;
+    border: none; border-top-left-radius: 25px;border-bottom-right-radius: 25px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+
+    @media(max-width: $mobile){ padding: .75rem 3rem; font-size: 1.25rem; }
+
+    &:hover{
+        cursor: pointer;
+        padding: 1rem 6rem;
+        color: $orange-theme; background-color: $main-font-color;
+        transition: .5s;
+        text-shadow: none; font-weight: bold;
+        border-radius: 25px;
+    }
+}

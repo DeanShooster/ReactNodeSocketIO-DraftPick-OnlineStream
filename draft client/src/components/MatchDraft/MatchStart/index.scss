@@ -1,0 +1,8 @@
+@import '../../../styles/global.scss';
+
+.match-ready-text{
+    @include center;
+    font-size: 3rem; font-weight: 600; letter-spacing: 4px; text-shadow: 0 1px 2px black; white-space: nowrap;
+
+    @media(max-width: $mobile) {font-size: 2rem; gap: .5rem;}
+}

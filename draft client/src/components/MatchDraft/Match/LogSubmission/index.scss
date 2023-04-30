@@ -1,0 +1,44 @@
+@import '../../../../styles/global.scss';
+
+.log-submission{
+    width: 90%;
+    margin: 0 auto;
+    
+    .submission-container{
+        width: 100%;
+        margin-bottom: 25px;
+        display: flex; flex-flow: column; justify-content: center; align-items: center; gap: 15px;
+
+        h1{
+            margin: 0;
+            font-size: 2.5rem; letter-spacing: 5px; text-decoration: underline;
+        }
+
+        input{
+            width: 100%; height: 1.5rem;
+            padding: .5rem 0 .5rem .5rem;
+            border-radius: 15px; border: none; outline: none;
+        }
+
+        button{ @include button; }
+
+        .log-error-msg{ 
+            font-size: 1.15rem; letter-spacing: 2px; font-weight: bold; text-shadow: 0 1px 0 black;
+            color: red;
+        }
+    }
+
+    iframe{
+        width: 100%; height: 100vh;
+        border-radius: 5px; border: none;
+    }
+
+}
+
+.submission-success{
+    @include center;
+    font-size: 3rem; letter-spacing: 2px; font-weight: bold; white-space: nowrap; text-shadow: 0 1px 3px black;
+
+    @media(max-width: $ipad) {font-size: 2rem;}
+    @media(max-width: $mobile) {font-size: 1.25rem;}
+}

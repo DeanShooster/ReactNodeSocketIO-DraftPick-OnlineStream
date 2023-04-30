@@ -1,0 +1,17 @@
+@import '../../../styles/global.scss';
+
+header{
+    width: 100%; max-width: $max-width;
+    padding: 1rem 0; margin: 0 auto;
+    display: flex; flex-flow: row; justify-content: center; align-items: center; gap: 3rem;
+
+    @media(max-width: $ipad){ gap: 2rem; }
+    @media(max-width: $mobile) {gap: 1rem; }
+
+    img{
+        width: 8rem;
+
+        @media(max-width: $ipad){ width: 6rem; }
+        @media(max-width: $mobile) {width: 3rem; }
+    }
+}

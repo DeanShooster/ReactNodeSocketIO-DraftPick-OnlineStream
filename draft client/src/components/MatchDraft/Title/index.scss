@@ -1,0 +1,8 @@
+@import '../../../styles/global.scss';
+
+.draft-match-title{ 
+    margin: 0 0 1.25rem 0;
+    text-align: center; letter-spacing: 3px; text-decoration: underline; font-size: 2.5rem;
+
+    @media(max-width: $mobile) { font-size: 1.5rem; letter-spacing: 2px;}
+}
