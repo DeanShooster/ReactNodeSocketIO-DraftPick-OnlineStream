@@ -1,0 +1,13 @@
+@import '../../../../../../styles/global.scss';
+
+.new-team{
+    display: flex; flex-flow: column; align-items: center;
+
+    h2{ text-decoration: underline;}
+    form{
+        display: flex; flex-flow: column; align-items: center; gap: 8px;
+
+        input{ @include form-input;}
+        button{ @include form-button;}
+    }
+}

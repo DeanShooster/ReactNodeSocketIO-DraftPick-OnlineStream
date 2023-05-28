@@ -1,0 +1,20 @@
+
+
+.team-picks-container{
+    position: relative;
+    display: flex; flex-flow: column; gap: 5px;
+
+    .spec-pick-wrapper{
+        position: relative;
+
+        
+        .wrapper-bg{
+            width: 250px;
+        }
+
+        .spec-pick{
+            position: absolute; left: 0; top: 0;
+            width: 100%;
+        }
+    }
+}

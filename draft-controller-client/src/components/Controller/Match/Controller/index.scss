@@ -1,0 +1,23 @@
+@import '../../../../styles/global.scss';
+
+.match-controller{
+
+    .button-container{
+        margin-bottom: 16px;
+        display: flex; justify-content: center; align-items: center; gap: 24px;
+
+        @media(max-width: $mobile) {gap: 12px; flex-wrap: wrap;}
+
+        button{ @include form-button;}
+        .reset-button{
+            background-color: rgb(143, 32, 45);
+
+            &:hover{
+                cursor: pointer;
+                background-color: white; color: rgb(143, 32, 45);
+                outline: 1px solid rgb(143, 32, 45);
+                transition: .5s;
+            }
+        }
+    }
+}

@@ -5,8 +5,16 @@
  * bans 0~2
  */
 const pickBanLimit = {
-    pick: 2,
-    ban: 1
+    pick: 5,
+    ban: 2,
+    pickRange:{
+        min: 2,
+        max: 6
+    },
+    banRange:{
+        min: 0,
+        max: 2
+    }
 }
 
 /**
@@ -26,7 +34,8 @@ const raidLeagueMatch = {
         picks: [],
         squad: [],
         matchReadyCheck: false,
-        log: null
+        log: null,
+        matchResults: []
     },
     team2: {
         name: null,
@@ -35,11 +44,14 @@ const raidLeagueMatch = {
         picks: [],
         squad: [],
         matchReadyCheck: false,
-        log: null
+        log: null,
+        matchResults: []
     },
     draftStage: 1,
     currentTurn: null,
-    pickNBanTurns: 1
+    pickNBanTurns: 1,
+    round: 1,
+    bosses: [null,null,null,null,null]
 };
 
 module.exports = { raidLeagueMatch , pickBanLimit };

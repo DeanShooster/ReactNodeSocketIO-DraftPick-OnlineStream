@@ -17,10 +17,8 @@ interface ITeamPanel{
 export const TeamPanel = ({left,bans,picks,pickBanLimit} : ITeamPanel) => {
 
     const pickList = [], banList = [];
-    for(let i = 0; i < pickBanLimit.pick ; i++) 
-        pickList.push(<TeamPick key={i} pickName={picks ? picks[i] : null}/>)
-    for(let i = 0; i < pickBanLimit.ban ; i++)
-        banList.push(<TeamBan key={i} banName={bans ? bans[i] : null}/>)
+    for(let i = 0; i < pickBanLimit.pick ; i++) pickList.push(<TeamPick key={i} pickName={picks ? picks[i] : null}/>)
+    for(let i = 0; i < pickBanLimit.ban ; i++) banList.push(<TeamBan key={i} banName={bans ? bans[i] : null}/>)
 
     return (
         <>

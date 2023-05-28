@@ -1,0 +1,32 @@
+
+const bossList = [
+    {name: 'Wing1' },
+    {name: 'Vale Guardian'},
+    {name: 'Gorseval'},
+    {name: 'Sabetha'},
+    {name: 'Wing2'},
+    {name: 'Sloth'},
+    {name: 'Mathias'},
+    {name: 'Wing3'},
+    {name: 'Escort'},
+    {name: 'KC'},
+    {name: 'Twisted Castle'},
+    {name: 'Xera'},
+    {name: 'Wing4'},
+    {name: 'CairnMO'},
+    {name: 'Samarog'},
+    {name: 'Deimos'},
+    {name: 'Wing5'},
+    {name: 'SH'},
+    {name: 'Dhuum'},
+    {name: 'Wing6'},
+    {name: 'CA'},
+    {name: 'Twin Largos'},
+    {name: 'Qadim'},
+    {name: 'Wing7'},
+    {name: 'Adina'},
+    {name: 'Sabir'},
+    {name: 'QTP'},
+]
+
+module.exports = { bossList }

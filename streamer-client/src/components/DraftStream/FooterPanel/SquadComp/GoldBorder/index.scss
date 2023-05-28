@@ -1,0 +1,7 @@
+
+$size: 5px;
+
+.TopBorder{ position: absolute; top: 0; left: 0; width: 100%; height: $size; }
+.LeftBorder{ position: absolute;  top: 0; left: 0; width: 150px; height: $size;   transform-origin: 0%; transform: rotate(90deg); }
+.BottomBorder{ position: absolute; bottom: 0; left: 0; width: 100%; height: $size; }
+.RightBorder{ position: absolute; bottom: 0; right: 0; width: 150px; height: $size; transform-origin: 100%; transform: rotate(90deg); }

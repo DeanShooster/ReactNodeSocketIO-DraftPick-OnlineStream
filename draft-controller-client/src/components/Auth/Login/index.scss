@@ -1,0 +1,44 @@
+
+
+.login-container{
+    position: fixed; top: 45%; left: 50%; transform: translate(-50%,-50%); z-index: 2;
+    padding: 2rem 3rem 2rem 3rem;    
+    background-color: #252733;
+    border-radius: 25px;
+
+    form{
+        display: flex; flex-flow: column; justify-content: center; align-items: center; gap: 16px; 
+
+        h1{
+            margin: 0;
+            white-space: nowrap; font-size: 1.75rem;
+        }
+
+        input{
+            padding: 8px 6px;
+            font-size: 1rem; letter-spacing: 1px;
+
+            &:focus{ outline: none;}
+        }
+
+        button{
+            padding: 6px 8px;
+            font-size: 1rem; font-weight: bold; letter-spacing: 2px;
+            background-color: white; color: #252733;
+            border: none; border-radius: 25px;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #252733; color: white;
+                outline: white 1px solid;
+                transform: scale(1.05);
+                transition: .5s;
+            }
+        }
+    }
+
+    .login-error-msg{
+        margin: 1rem 0 0 0;
+        text-align: center; letter-spacing: 1px; font-size: 1rem; color: red;
+    }
+}

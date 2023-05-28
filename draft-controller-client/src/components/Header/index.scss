@@ -1,0 +1,14 @@
+@import '../../styles/global.scss';
+
+header{
+    display: flex; align-items: center; gap: 1.25rem;
+    padding: .5rem 0 .5rem 1rem;
+    background-color: #252733;
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.5);
+
+    img{ width: 75px;}
+    h1{
+        font-size: 2rem; letter-spacing: 3px; text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+        @media(max-width: $ipad){ text-align: center;}
+    }
+}

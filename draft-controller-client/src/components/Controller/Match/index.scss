@@ -1,0 +1,6 @@
+@import '../../../styles/global.scss';
+
+.match-container{
+    @include controller-container;
+    h1{ @include title-controller;}
+}

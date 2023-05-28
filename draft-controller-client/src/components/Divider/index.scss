@@ -1,0 +1,8 @@
+@import '../../styles/global.scss';
+
+.divider{
+    width: 2px; min-height: 50px;
+    background-color: $color;
+    
+    @media(max-width: $mobile){ width: 100%; min-height: 2px;}
+}

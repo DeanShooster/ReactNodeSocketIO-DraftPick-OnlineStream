@@ -9,6 +9,8 @@ const port = process.env.PORT;
 
 // Routers Declarations
 const raidLeagueRouter = require('./routers/raidLeagueRouter');
+const controllerRouter = require('./routers/controllerRouter');
+const streamerRouter = require('./routers/streamerRouter');
 
 // Cors white list and JSON
 app.use(cors());
@@ -16,6 +18,8 @@ app.use(express.json());
 
 // Routers
 app.use(raidLeagueRouter);
+app.use(controllerRouter);
+app.use(streamerRouter);
 app.use(ErrorHandler);
 
 

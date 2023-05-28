@@ -1,0 +1,20 @@
+@import '../../../../../../styles/global.scss';
+
+.edit-team{
+    display: flex; flex-flow: column; align-items: center;
+
+    h2{ text-decoration: underline;}
+
+    form{
+        display: flex; flex-flow: column; align-items: center; gap: 8px;
+
+        div{
+            display: flex; gap: 8px;
+
+            label{ font-size: 1rem;}
+            select{ text-align: center; color: $color;}
+        }
+        input{ @include form-input;}
+        button{ @include form-button;}
+    }
+}

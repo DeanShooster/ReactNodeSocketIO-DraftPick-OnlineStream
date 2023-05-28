@@ -1,0 +1,28 @@
+@import '../../../../../styles/global.scss';
+
+
+.controller-pick-ban{
+
+    h2{
+        margin: 0 0 1rem 0;
+        text-decoration: underline; white-space: nowrap;
+    }
+
+    form{
+        width: 75%; margin: 0 auto;
+        display: flex; flex-flow: column; justify-content: center; gap: 16px;
+
+        div{
+            display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+
+            label{ font-size: 1rem; font-weight: bold; letter-spacing: 1px;}
+            select{
+                width: 50px; padding: 5px 0;
+
+                option{ text-align: center; font-size: 1rem; font-weight: bold; color: $color;}
+            }
+        }
+
+        button{ @include form-button;}
+    }
+}

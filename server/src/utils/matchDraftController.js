@@ -1,4 +1,5 @@
 const { raidLeagueMatch, pickBanLimit } = require("../data/matchData");
+const { bossesDraft } = require("./bossesDraft");
 
 /**
  * Updates the team ready check status.
@@ -92,6 +93,7 @@ function draftStageHandler(){
     switch(draftStage){
         case 1:{
             if(team1.draftReadyCheck && team2.draftReadyCheck) raidLeagueMatch.draftStage = 2;
+            raidLeagueMatch.bosses = bossesDraft();
             return;
         }
         case 2:{

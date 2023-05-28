@@ -1,0 +1,18 @@
+@import '../../../../../styles/global.scss';
+
+.team{
+    padding: 1rem 2rem; width: 75px;
+    display: flex; flex-flow: column; justify-content: center; align-items: center; gap: 8px;
+    border-radius: 12px;
+    background-color: $color; color: white;
+
+    h3{
+        margin: 0;
+        font-size: 1.25rem; letter-spacing: 1px; white-space: nowrap;
+    }
+
+    p{
+        margin: 0;
+        font-size: 1.15rem; letter-spacing: 1px; white-space: nowrap;
+    }
+}

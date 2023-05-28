@@ -1,0 +1,7 @@
+@import '../../../styles/global.scss';
+
+
+.settings-container{
+    @include controller-container;
+    h1{ @include title-controller;}
+}

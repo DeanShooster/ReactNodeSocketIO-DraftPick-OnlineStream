@@ -1,0 +1,7 @@
+@import '../../../styles/global.scss';
+
+.categories-container{
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; justify-content: center; gap: 2rem;
+    @media(max-width: $mobile){ flex-wrap: wrap;}
+}

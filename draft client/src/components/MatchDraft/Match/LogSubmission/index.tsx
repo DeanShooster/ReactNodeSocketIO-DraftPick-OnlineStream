@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import { localTokenKey } from '../../../../constants/General';
+import { localTokenKey, logSub, submitLog } from '../../../../constants/General';
 import { logSubmission } from '../../../../API/RaidLeagueAPI';
+
+import { Title } from '../../Title';
 
 import './index.scss';
 
@@ -36,9 +38,9 @@ export const LogSubmission = () => {
         {waiting ? <div className='submission-success'>Log was Submitted Successfully!</div> : 
             <section className='log-submission'>
                 <div className='submission-container'>
-                    <h1>Log Submission</h1>
+                    <Title text={logSub}/>
                     <input onChange={logHandler}/>
-                    <button onClick={logSubmissionHandler}>Submit Log</button>
+                    <button onClick={logSubmissionHandler}>{submitLog}</button>
                     {logError && <span className='log-error-msg'>{logError}</span>}
                 </div>
                 <iframe src='https://dps.report/' title='DPS Report'></iframe>

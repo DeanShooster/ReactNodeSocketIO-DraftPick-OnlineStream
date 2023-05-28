@@ -15,4 +15,16 @@ const auth = async (req,res,next) => {
     }
 }
 
-module.exports = auth;
+const adminAuth = async (req,res,next) => {
+    try{
+        const token = req.headers.token;
+        jwt.verify(token ,process.env.ADMIN_SECRET);
+        next();
+    }
+    catch(error){
+        if(error.message === 'invalid token' || error.message === 'jwt expired') return next(new UserError('No Authentication.',401));
+        return next(error); 
+    }
+}
+
+module.exports = {auth , adminAuth};

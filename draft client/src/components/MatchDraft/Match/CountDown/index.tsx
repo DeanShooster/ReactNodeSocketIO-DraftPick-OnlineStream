@@ -1,4 +1,5 @@
 import { SandClock } from "../../../../Images"
+import { fight } from "../../../../constants/General";
 
 import './index.scss';
 
@@ -14,7 +15,7 @@ export const CountDown = ({countDown} : ICountDown) => {
                 <span>{countDown}</span>
                 <img alt='' src={SandClock}/>
             </div> :
-            <div className='fight'>FIGHT!</div>
+            <div className='fight'>{fight}</div>
         }
         </>
     )

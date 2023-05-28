@@ -1,0 +1,9 @@
+@import '../../../../styles/global.scss';
+
+.settings-controller-container{
+    display: flex; justify-content: center; gap: 4rem;
+
+    @media(max-width: $mobile){
+        flex-flow: column; align-items: center;
+    }
+}

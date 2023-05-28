@@ -1,0 +1,31 @@
+@import '../../styles/global.scss';
+
+.loader-container{
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    display: flex; justify-content: center; align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    color: $color;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.5rem;
+    text-shadow: 0 0 1px black;
+}
+
+.loader:after {
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: $color transparent $color transparent;
+    animation: loading 2.5s linear infinite;
+}
+
+@keyframes loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

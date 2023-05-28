@@ -35,7 +35,7 @@ export const MatchDraft = () => {
         setSocket(connectionSocket);
         if(backgroundSound){
             backgroundSound.current.play();
-            backgroundSound.current.volume = 0.25;
+            backgroundSound.current.volume = 0.05;
         }
       },[])
 

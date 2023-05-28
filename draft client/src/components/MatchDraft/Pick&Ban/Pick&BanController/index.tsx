@@ -1,6 +1,6 @@
 
 import { pickNBanHandler } from '../../../../API/RaidLeagueAPI';
-import { localTokenKey } from '../../../../constants/General';
+import { localTokenKey, lock } from '../../../../constants/General';
 
 import './index.scss';
 
@@ -23,7 +23,7 @@ export const PickNBanController = ({selectedSpec,setSelectedSpec} : IPickNBanCon
         <footer>
             <button className='button-container' onClick={pickBanControllerHandler}>
                 <img alt={selectedSpec?.name} src={selectedSpec?.image}/>
-                <span>Lock</span>
+                <span>{lock}</span>
             </button>
         </footer>
     );

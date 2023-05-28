@@ -1,0 +1,14 @@
+
+
+.no-support-msg{
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    font-size: 4rem; letter-spacing: 2px; color: white; text-align: center; text-shadow: 0px 3px 2px black, -3px 0 2px;
+    animation: pumping linear 2s infinite;
+}
+
+@keyframes pumping{
+    0%{transform: scale(1) translate(-50%,-50%);}
+    25%{transform: scale(1.1) translate(-50%,-50%);}
+    75%{transform: scale(0.9) translate(-50%,-50%);}
+    100%{transform: scale(1) translate(-50%,-50%);}
+}

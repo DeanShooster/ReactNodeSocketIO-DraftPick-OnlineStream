@@ -12,6 +12,7 @@ import { IMatchDraftObject } from '..';
 
 import './index.scss';
 import { squadHandler } from '../../../API/RaidLeagueAPI';
+import { Title } from '../Title';
 
 interface ISquadComposition{
     matchDraft: IMatchDraftObject | null
@@ -40,19 +41,19 @@ export const SquadComposition = ({matchDraft}:ISquadComposition) => {
         setOpponentPicks(specList);
     },[matchDraft]);
 
-    useEffect(()=>{
-        (async ()=>{
-            if(selectionCountdown?.countdown === 0){
-                const randomSquad: string[] = [];
-                while(randomSquad.length < 10){
-                    for(let i = 0; i < opponentPicks.length; i ++)
-                        randomSquad.push(opponentPicks[i]);
-                }
-                await squadHandler(localStorage.getItem(localTokenKey),randomSquad);
-                setWaiting(true);
-            }
-        })();
-    },[selectionCountdown,opponentPicks])
+    // useEffect(()=>{
+    //     (async ()=>{
+    //         if(selectionCountdown?.countdown === 0){
+    //             const randomSquad: string[] = [];
+    //             while(randomSquad.length < 10){
+    //                 for(let i = 0; i < opponentPicks.length; i ++)
+    //                     randomSquad.push(opponentPicks[i]);
+    //             }
+    //             await squadHandler(localStorage.getItem(localTokenKey),randomSquad);
+    //             setWaiting(true);
+    //         }
+    //     })();
+    // },[selectionCountdown,opponentPicks])
 
     const handleDragStart = (event: any, spec: ISpecList)=> setDragging(spec);
     const handleDragOver = (event: any) => event.preventDefault();
@@ -72,10 +73,10 @@ export const SquadComposition = ({matchDraft}:ISquadComposition) => {
 
     return (
         <>
-            {selectionCountdown && <SelectionCountDown selectionCountdown={selectionCountdown} setSelectionCountdown={setSelectionCountdown} active={!waiting}/>}
+            {/* {selectionCountdown && <SelectionCountDown selectionCountdown={selectionCountdown} setSelectionCountdown={setSelectionCountdown} active={!waiting}/>} */}
             {waiting && <WaitingForOpponent />}
             <section className='squad-composition-container'>
-                <h1>Build Your Squad</h1>
+                <Title text='Build Your Squad'/>
                 <Squad squad={squad} setSquad={setSquad} handleDragOver={handleDragOver} handleDragDrop={handleDragDrop}/>
                 <BuildSpecList handleDragStart={handleDragStart} opponentPicks={opponentPicks}/>
             </section>

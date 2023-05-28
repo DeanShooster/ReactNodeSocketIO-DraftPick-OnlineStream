@@ -1,0 +1,49 @@
+
+
+.ban-boss-container{
+    display: flex; justify-content: center; align-items: flex-end;
+
+    .bans{
+        position: relative;
+        display: flex;
+
+        .bg-ban-img{ width: 300px;}
+
+        .banned-specs-left{
+            display: flex; gap: 16px;
+            position: absolute; left: 0; top: 50%; transform: translate(25px,-20%);
+
+            img{ width: 50px; }
+        }
+
+        .banned-specs-right{
+            display: flex; gap: 16px;
+            position: absolute; right: 0; top: 50%; transform: translate(-25px,-20%);
+
+            img{ width: 50px; }
+        }
+    }
+
+    .boss-container{
+        position: relative;
+
+        .bosses-bg-img{
+            width: 600px;
+        }
+
+        .bosses-list{
+            width: 65%; 
+            position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%);
+            display: grid; justify-items: center; align-items: flex-end; gap: 7px;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 1fr 1fr;
+
+            .team-logo-img{
+                width: 25px;
+            }
+            .boss-img{
+                width: 60px;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+
+
+.footer-panel-container{
+    position: relative;
+
+    .panel{
+        position: fixed; bottom: 0; left: 50%; transform: translate(-50%,10px);
+        display: flex; flex-flow: column; gap: 16px;   
+    }
+}

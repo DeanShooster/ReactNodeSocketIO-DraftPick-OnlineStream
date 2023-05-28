@@ -1,6 +1,6 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const auth = require('../middlewares/Authentication');
+const {auth} = require('../middlewares/Authentication');
 const { UserError } = require('../middlewares/ErrorHandler');
 const {currentMatchTeams} = require('../data/teamsData');
 const {raidLeagueMatch, pickBanLimit} = require('../data/matchData');

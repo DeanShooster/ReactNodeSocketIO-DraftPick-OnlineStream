@@ -1,0 +1,12 @@
+@import '../../../../../styles/global.scss';
+
+.match-results{
+    display: flex; justify-content: center; gap: 12px;
+
+    form{
+        display: flex; align-items: center; justify-content: center;  gap: 24px; flex-wrap: wrap;
+
+        select{ font-size: 1.25rem; text-align: center; color: $color;}
+        button{ @include form-button;}
+    }
+}

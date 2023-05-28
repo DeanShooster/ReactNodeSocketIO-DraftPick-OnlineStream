@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { readyCheck } from '../../../API/RaidLeagueAPI';
-import { localTokenKey } from '../../../constants/General';
+import { localTokenKey, readyCheckText, readyFight } from '../../../constants/General';
 
 import { WaitingForOpponent } from '../Waiting/WaitingForOpponent';
 
@@ -24,7 +24,7 @@ export const ReadyCheck = ({fight}:IReadyCheck) => {
         <>
             {ready ? <WaitingForOpponent /> : <>
                 <div className='ready-check-user-info'>
-                    <span>{fight ? 'Ready to Fight?' : 'If you are ready press...'}</span>
+                    <span>{fight ? readyFight : readyCheckText}</span>
                     <img alt='' src={ArrowDown}/>
                 </div>
                 <button className='ready-check-button' onClick={readyCheckHandler}>Ready Check</button> 

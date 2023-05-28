@@ -1,0 +1,20 @@
+@import '../../../../styles/global.scss';
+
+.current-match{
+    margin-bottom: 25px;
+    display: flex; justify-content: center; align-items: center; gap: 1rem;
+
+    @media(max-width: $mobile) {margin-bottom: 5px;}
+
+    span{
+        font-size: 3rem; font-weight: bold; letter-spacing: 4px; white-space: nowrap;
+
+        @media(max-width: $mobile){ font-size: 2rem;}
+    }
+
+    img{
+        width: 4.375rem;
+
+        @media(max-width: $mobile){width: 3rem; }
+    }
+}

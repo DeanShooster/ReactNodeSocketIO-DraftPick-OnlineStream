@@ -1,0 +1,17 @@
+@import '../../../../../styles/global.scss';
+
+.next-match{
+    display: flex; flex-flow: column; align-items: center;
+
+    h2{ text-decoration: underline; }
+
+    form{
+        display: flex; align-items: center; justify-content: center;  gap: 24px; flex-wrap: wrap;
+        text-align: center;
+
+        h3{margin: 0;}
+        select{ font-size: 1.25rem; text-align: center; color: $color;}
+        img{ width: 2rem;}
+        button{ width: 100%; @include form-button;}
+    }
+}

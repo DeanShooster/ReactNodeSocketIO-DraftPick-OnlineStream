@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;600;700&display=swap');
+
+// Themes
+$color: #252733;
+$font-theme: 'Signika Negative', sans-serif;
+
+
+// Media
+$ipad: 1000px;
+$mobile: 600px;
+
+// Mixin
+@mixin controller-container{
+    width: 90%; margin: 0 auto;
+    color: $color;
+}
+
+@mixin title-controller{
+    margin: 0 0 50px 0;
+    font-size: 3rem; text-align: center; letter-spacing: 3px; text-decoration: underline;
+    color: $color; text-shadow: 0 1px 2px black;
+    @media(max-width: $mobile){ font-size: 2rem;}
+}
+
+@mixin form-button{
+    padding: .5rem 1rem;
+    background-color: $color; color: white;
+    border: none; border-radius: 25px;
+    font-size: 1.25rem; letter-spacing: 1px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: white; color: $color;
+        outline: 1px solid $color;
+        transition: .5s;
+    }
+}
+
+@mixin form-input{
+    padding: 8px 10px;
+    border: 2px solid $color; border-radius: 25px;
+    font-size: 1rem; letter-spacing: 1px; color: $color;
+}

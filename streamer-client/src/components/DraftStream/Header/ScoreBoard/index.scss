@@ -1,0 +1,38 @@
+
+
+.scoreboard{
+    width: 700px;
+    position: absolute; left: 50%; top: 0;  transform: translate(-50%, -15px); z-index: 1;
+
+    .board{
+        width: 100%;
+    }
+
+    .general-match-info{
+        width: 85%;
+        position: absolute; top: 15px; left: 50%; transform: translateX(-50%);
+        display: flex; justify-content: space-between;
+
+        .team-match-info{
+            display: flex;
+
+            p{
+                margin: 0; padding: 0;
+                font-size: 1.2rem;
+            }
+
+            .team-logo{
+                width: 80px;
+            }
+
+            .win-lose-info{
+                margin: auto 0 0 0;
+                display: flex; flex-flow: column; gap: 3px;
+
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
