@@ -8,9 +8,7 @@ interface ICurrentMatch{
 }
 
 export const CurrentMatch = ({match}: ICurrentMatch) => {
-
     const noTeam = '???';
-
     return (
         <div className="current-match">
             <span>{match[0]?.name || noTeam}</span>

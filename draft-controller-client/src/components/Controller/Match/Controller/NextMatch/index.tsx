@@ -25,7 +25,7 @@ export const NextMatch = ({teams,updateSetting}:INextMatch) => {
     const [modalMsg,setModalMsg] = useState<string | null>(null);
 
     const teamOptions = [];
-    for(let i = 0; i < teams.length; i++) teamOptions.push(<option key={i}>{teams[i].name}</option>)
+    for(let i = 0; i < teams.length; i++) teamOptions.push(<option key={i}>{teams[i]?.name}</option>)
 
     async function setMatchHandler(event: any){
         event.preventDefault();

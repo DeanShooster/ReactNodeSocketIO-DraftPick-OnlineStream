@@ -1,6 +1,6 @@
-// const server = 'http://localhost:8080';
+const server = 'http://localhost:8080';
 
-const server = 'http://34.243.129.70:8080';
+// const server = 'http://34.243.129.70:8080';
 
 /**
  * Sends admin credentials to the server and gets a token.
