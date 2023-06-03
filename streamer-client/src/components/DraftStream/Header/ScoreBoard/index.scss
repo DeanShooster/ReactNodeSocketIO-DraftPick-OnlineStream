@@ -1,4 +1,4 @@
-
+@import '../../../../styles/global.scss';
 
 .scoreboard{
     width: 700px;
@@ -21,17 +21,14 @@
                 font-size: 1.2rem;
             }
 
-            .team-logo{
-                width: 80px;
-            }
+            .team-logo{ width: 80px;}
 
             .win-lose-info{
                 margin: auto 0 0 0;
                 display: flex; flex-flow: column; gap: 3px;
 
-                img{
-                    width: 30px;
-                }
+                img{ width: 30px;}
+                .win-animation{@include spin-animation; }
             }
         }
     }

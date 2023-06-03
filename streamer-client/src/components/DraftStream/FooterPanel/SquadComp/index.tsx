@@ -3,7 +3,7 @@ import { findSpecLogo } from '../../../../utils/findSpec';
 
 import './index.scss';
 import { GoldBorder } from './GoldBorder';
-import { RaidLeagueLogo } from '../../../../Images';
+import { RaidLeagueLogo, noBoss } from '../../../../Images';
 
 interface ISquadComp{
     teamOne: string[],
@@ -11,15 +11,19 @@ interface ISquadComp{
 }
 
 export const SquadComp = ({teamOne,teamTwo} : ISquadComp) => {
+
+    const noSquad = [];
+    for(let i = 0; i < 10 ; i ++) noSquad.push(<img key={i} src={noBoss}/>)
+
     return (
         <div className='squad-comp-container'>
             <GoldBorder />
             <div className='squad'>
-                {teamOne.map( (spec,index)=>{ return <img key={index} alt='' src={findSpecLogo(spec)}/>})}
+                {teamOne.length > 0 ? teamOne.map( (spec,index)=>{ return <img key={index} alt='' className='chosen-comp-spec' src={findSpecLogo(spec)}/>}) : noSquad }
             </div>
             <img alt='' src={RaidLeagueLogo} className='logo'/>
             <div className='squad'>
-                {teamTwo.map( (spec,index)=>{ return <img key={index} alt='' src={findSpecLogo(spec)}/>})}
+                {teamTwo.length > 0 ? teamTwo.map( (spec,index)=>{ return <img key={index} alt='' className='chosen-comp-spec' src={findSpecLogo(spec)}/>}) : noSquad}
             </div>
         </div>
     );

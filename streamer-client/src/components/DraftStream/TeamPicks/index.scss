@@ -1,4 +1,4 @@
-
+@import '../../../styles/global.scss';
 
 .team-picks-container{
     position: relative;
@@ -6,15 +6,17 @@
 
     .spec-pick-wrapper{
         position: relative;
-
         
-        .wrapper-bg{
-            width: 250px;
-        }
-
+        .wrapper-bg{ width: 250px;}
         .spec-pick{
             position: absolute; left: 0; top: 0;
             width: 100%;
         }
+        .spec-name{
+            position: absolute;
+            text-shadow: 1px 0px 2px $color-theme, 3px 1px 3px black; letter-spacing: 1px
+        }
     }
+
+    .spec-chosen{ @include spin-animation; }
 }

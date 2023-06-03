@@ -4,7 +4,7 @@ import { SpecListPicks, SpecLogoListPicks } from "../data/specList";
 export function findSpec(specName: string | undefined){
     if(specName)
         for(let i = 0; i < SpecListPicks.length ; i++)
-            if(SpecListPicks[i].name === specName) return SpecListPicks[i].image;
+            if(SpecListPicks[i].name === specName) return SpecListPicks[i];
     return undefined;
 }
 

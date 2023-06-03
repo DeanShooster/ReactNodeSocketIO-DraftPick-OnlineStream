@@ -2,3 +2,9 @@
 
 $color-theme: rgb(255, 211, 67);
 $font-theme: cursive;
+
+// Mixin
+@mixin spin-animation{ animation: spin 1s linear; }
+
+// Animations
+@keyframes spin{ 50%{transform: rotateY(180deg);} }

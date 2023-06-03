@@ -1,4 +1,4 @@
-
+@import '../../../../styles/global.scss';
 
 .squad-comp-container{
     position: relative;
@@ -15,8 +15,7 @@
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: 1fr 1fr;
 
-        img{
-            width: 60px;
-        }
+        img{ width: 60px;}
+        .chosen-comp-spec{ @include spin-animation; }
     }
 }
