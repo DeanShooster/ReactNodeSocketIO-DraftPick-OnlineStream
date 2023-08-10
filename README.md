@@ -1,5 +1,5 @@
 <div></div>
-<h1  align="center">Guild Wars 2 Draft</h1>
+<h1  align="center">Game Drafter</h1>
 
 <div align="center">
   <p align="center">
@@ -32,6 +32,7 @@ It is built with React - Typescript , NodeJS.
 <bold>Private Drafter</bold>
 
 https://github.com/DeanShooster/ReactNodeSocketIO-DraftPick-OnlineStream/assets/92792238/ffa9e6ed-34a8-4c90-935a-b5a5ab31f5df
+
 https://github.com/DeanShooster/ReactNodeSocketIO-DraftPick-OnlineStream/assets/92792238/6601994d-80dd-4cc5-940f-ca2edf22b267
 
 <bold>Admin Controller Page</bold>
